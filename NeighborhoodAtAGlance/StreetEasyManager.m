@@ -17,7 +17,7 @@
 
 #define kAPIKey @"c41a671977bc786c7128db984d62bd5babc721a2"
 
-#define kDebugMode 1
+#define kDebugMode 0
 
 @interface StreetEasyManager()
 
