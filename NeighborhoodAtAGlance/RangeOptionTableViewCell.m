@@ -38,22 +38,6 @@
     
 }
 
-- (void)sliderValueChanged {
-    RangeFilterOption *option = (RangeFilterOption*)[[FilterManager sharedManager]getFilterOptionForIndex:self.index];
-    
-
-
-
-//    int lowerValue = self.slider.lowerValue * (option.maxValue.integerValue - option.minValue.integerValue) + option.minValue.integerValue;
-//   // [self.lowerRangeValueLabel setText:[NSString stringWithFormat:@"%@",[formatter stringFromNumber:[NSNumber numberWithInt:lowerValue]]]];
-//    
-//    int upperValue = self.slider.upperValue * option.maxValue.integerValue;
-//    [self.upperRangeValueLabel setText:[NSString stringWithFormat:@"%@",[formatter stringFromNumber:[NSNumber numberWithInt:upperValue]]]];
-//    
-//    [option setSelectedMinValue:[NSNumber numberWithInt:lowerValue]];
-//    [option setSelectedMaxValue:[NSNumber numberWithInt:upperValue]];
-}
-
 - (void)disableOption {
     [super disableOption];
     [self.valueLabel setTextColor:[UIColor lightGrayColor]];
