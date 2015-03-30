@@ -3,11 +3,20 @@
 <ul>
   <li>Built for iOS 8.0 with Xcode 6.2</li>
   <li>Dependency management done with <a href="http://cocoapods.org">CocoaPods</a></li>
-  <li>Third party libraries used:</li>
+  <li>Third party libraries used:
   <ul>
     <li><a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a></li>
     <li><a href="https://github.com/muZZkat/NMRangeSlider">NMRangeSlider</a></li>
   </ul>
+  </li>
+  <li>Image resources used:
+  <ul>
+    <li><a href="http://www.flaticon.com/free-icon/binoculars_51179">Binoculars</a></li>
+    <li><a href="http://www.flaticon.com/free-icon/check-circular-button_56485">Checkmark</a></li>
+    <li><a href="http://www.flaticon.com/free-icon/filter_24540">Filter</a></li>
+    <li><a href="http://press.streeteasy.com/logos">StreetEasy</a></li>
+  </ul>
+  </li>
 </ul>
 ###### Screenshots
 <p align="center" >
