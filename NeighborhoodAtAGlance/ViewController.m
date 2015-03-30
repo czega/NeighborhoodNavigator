@@ -57,6 +57,14 @@
     [self updateWithCoordinate:location.coordinate];
 }
 
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    if (status == kCLAuthorizationStatusDenied) {
+        [self.neighborhoodLabel setText:kUnknownLocation];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Access to your location is required for Neighborhood Navigator. Please allow access from the Settings app." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];
+    }
+}
+
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
     [self updateWithCoordinate:userLocation.coordinate];
 }
