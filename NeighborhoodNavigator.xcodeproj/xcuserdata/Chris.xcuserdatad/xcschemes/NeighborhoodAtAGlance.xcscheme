@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83D0CA5D1AC47510004858E5"
-               BuildableName = "NeighborhoodAtAGlance.app"
+               BuildableName = "Neighborhood.app"
                BlueprintName = "NeighborhoodAtAGlance"
                ReferencedContainer = "container:NeighborhoodNavigator.xcodeproj">
             </BuildableReference>
@@ -91,7 +91,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83D0CA5D1AC47510004858E5"
-            BuildableName = "NeighborhoodAtAGlance.app"
+            BuildableName = "Neighborhood.app"
             BlueprintName = "NeighborhoodAtAGlance"
             ReferencedContainer = "container:NeighborhoodNavigator.xcodeproj">
          </BuildableReference>

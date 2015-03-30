@@ -40,7 +40,6 @@
 - (void)getRentalsByArea:(NSString *)area withCompletionBlock:(void (^)(NSError *, NSDictionary *))completionBlock {
     NSString *filterString = [[FilterManager sharedManager] getRentalsFilterString];
     NSString *url = [NSString stringWithFormat:@"%@%@?criteria=area:%@%@&key=%@&format=json",kBaseURL,kFindRentalsEndpoint,area,filterString,kAPIKey];
-    NSLog(@"Url: %@",url);
     [self sendGetRequestWithUrl:url withCompletionBlock:completionBlock];
 }
 
