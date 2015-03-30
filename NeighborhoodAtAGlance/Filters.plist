@@ -50,53 +50,5 @@
 		<key>key</key>
 		<string>rooms</string>
 	</dict>
-	<dict>
-		<key>maxValue</key>
-		<integer>3000</integer>
-		<key>minValue</key>
-		<integer>200</integer>
-		<key>type</key>
-		<string>RANGE</string>
-		<key>name</key>
-		<string>Square Feet</string>
-		<key>key</key>
-		<string>sqft</string>
-	</dict>
-	<dict>
-		<key>maxValue</key>
-		<integer>3000</integer>
-		<key>minValue</key>
-		<integer>200</integer>
-		<key>type</key>
-		<string>RANGE</string>
-		<key>name</key>
-		<string>Price Per Square Foot</string>
-		<key>key</key>
-		<string>ppsf</string>
-	</dict>
-    <dict>
-        <key>maxValue</key>
-        <integer>3000</integer>
-        <key>minValue</key>
-        <integer>0</integer>
-        <key>type</key>
-        <string>RANGE</string>
-        <key>name</key>
-        <string>Maintenance</string>
-        <key>key</key>
-        <string>maintenance</string>
-    </dict>
-	<dict>
-		<key>maxValue</key>
-		<integer>100</integer>
-		<key>minValue</key>
-		<integer>0</integer>
-		<key>type</key>
-		<string>RANGE</string>
-		<key>name</key>
-		<string>Price Changed Percent</string>
-		<key>key</key>
-		<string>price_changed_pct</string>
-	</dict>
 </array>
 </plist>

@@ -11,7 +11,8 @@
 @interface RangeFilterOption : FilterOption
 @property NSNumber *minValue;
 @property NSNumber *maxValue;
+@property NSString *unit;
 
-@property NSNumber *selectedMinValue;
-@property NSNumber *selectedMaxValue;
+@property NSNumber *selectedValue;
+
 @end

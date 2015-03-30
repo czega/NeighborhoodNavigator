@@ -132,8 +132,8 @@
             
             [self.salesCountLabel setText:[NSString stringWithFormat:@"%@",count]];
             [self.salesPriceLabel setText:[NSString stringWithFormat:@"$%@",[formatter stringFromNumber:medianPrice]]];
-        } else {
-            NSLog(@"Error Sales");
+        } else if (error) {
+            NSLog(@"Error Sales: %@", error);
         }
     }];
     
@@ -147,8 +147,8 @@
             
             [self.rentalsCountLabel setText:[NSString stringWithFormat:@"%@",count]];
             [self.rentalsPriceLabel setText:[NSString stringWithFormat:@"$%@",[formatter stringFromNumber:medianPrice]]];
-        } else {
-            NSLog(@"Error Rentals");
+        } else if (error) {
+            NSLog(@"Error Rentals: %@", error);
         }
     }];
 }

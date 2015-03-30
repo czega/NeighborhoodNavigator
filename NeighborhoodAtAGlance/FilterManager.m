@@ -52,8 +52,8 @@
                 [option setKey:dict[@"key"]];
                 [option setMinValue:dict[@"minValue"]];
                 [option setMaxValue:dict[@"maxValue"]];
-                [option setSelectedMinValue:dict[@ "minValue"]];
-                [option setSelectedMaxValue:dict[@"maxValue"]];
+                [option setSelectedValue:dict[@"minValue"]];
+                [option setUnit:dict[@"unit"]];
                 
                 [self.options addObject:option];
             }
@@ -94,7 +94,7 @@
                 [filterString appendFormat:@"|%@=%@",valueOption.key,value];
             } else if ([option isKindOfClass:[RangeFilterOption class]]) {
                 RangeFilterOption *rangeOption = (RangeFilterOption*)option;
-                [filterString appendFormat:@"|%@=%@-%@",rangeOption.key,rangeOption.selectedMinValue,rangeOption.selectedMaxValue];
+                [filterString appendFormat:@"|%@=%@",rangeOption.key,rangeOption.selectedValue];
             }
         }
     }

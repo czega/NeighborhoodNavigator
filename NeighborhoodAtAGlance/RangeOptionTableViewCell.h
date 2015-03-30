@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "OptionTableViewCell.h"
-#import "NMRangeSlider.h"
 
 @interface RangeOptionTableViewCell : OptionTableViewCell
-@property (weak, nonatomic) IBOutlet NMRangeSlider *slider;
 
-@property (weak, nonatomic) IBOutlet UILabel *lowerRangeValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *upperRangeValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+
+- (IBAction)sliderValueChanged:(id)sender;
 
 @end

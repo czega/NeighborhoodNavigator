@@ -17,6 +17,8 @@
 
 #define kAPIKey @"c41a671977bc786c7128db984d62bd5babc721a2"
 
+#define kDebugMode 1
+
 @interface StreetEasyManager()
 
 @property AFHTTPRequestOperationManager* requestManager;
@@ -67,10 +69,18 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     [manager GET:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        #if kDebugMode
+            NSLog(@"Url: %@", url);
+            NSLog(@"Data: %@", responseObject);
+        #endif
         if (completionBlock) {
             completionBlock(nil,responseObject);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        #if kDebugMode
+            NSLog(@"Url: %@", url);
+            NSLog(@"Error: %@", error);
+        #endif
         if (completionBlock) {
             completionBlock(error,nil);
         }
