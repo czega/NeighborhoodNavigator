@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  NeighborhoodNavigator
+//
+//  Created by Christopher Zega on 3/28/15.
+//  Copyright (c) 2015 ChrisZega. All rights reserved.
+//
+
+#ifndef NeighborhoodNavigator_PrefixHeader_pch
+#define NeighborhoodNavigator_PrefixHeader_pch
+
+#import "FilterManager.h"
+
+#define kBlueColor [UIColor colorWithRed:0 green:122/255.0f blue:1 alpha:1]
+
+#endif
